@@ -20,15 +20,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1614;
-    --foreground: #fdfbf7;
-    --sable: #2c251e;
-    --sable-dark: #4a3f33;
-    --or: #b5952f;
-  }
-}
 
 body {
   background: var(--background);
