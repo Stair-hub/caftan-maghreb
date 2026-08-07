@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { GradientBackground } from "@/components/ui/sunset";
 
 export const metadata: Metadata = {
   title: "Atelier Tifawin | Créations Orientales",
@@ -30,7 +31,10 @@ export default function RootLayout({
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-transparent">
+        <div className="fixed inset-0 -z-50">
+          <GradientBackground className="w-full h-full" />
+        </div>
         <Navbar />
         <main className="flex-grow">
           {children}
