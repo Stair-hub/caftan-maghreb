@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { products } from "@/lib/products";
+import { GradientShimmer } from "@/components/ui/gradient-shimmer";
 
 export default function Home() {
   const featured = products.slice(0, 3);
@@ -8,7 +9,17 @@ export default function Home() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <section className="text-center py-20">
         <h1 className="text-5xl font-serif font-bold text-[var(--color-or)] mb-6">
-          La lumière de nos ancêtres
+          <GradientShimmer
+            gradient="tonic"
+            easing="gentle"
+            duration={2}
+            spread={4}
+            pauseBetween={2000}
+            baseColor="var(--color-or)"
+            className="text-5xl font-serif font-bold tracking-tight"
+          >
+            La lumière de nos ancêtres
+          </GradientShimmer>
         </h1>
         <p className="text-lg text-foreground opacity-80 max-w-2xl mx-auto mb-10">
           Nous célébrons l&apos;héritage majestueux du Maghreb en réinventant le
