@@ -15,7 +15,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-foreground">À PROPOS</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li><Link href="/savoir-faire" className="hover:text-[var(--color-or)] transition">Notre Savoir-Faire</Link></li>
-              <li><Link href="#" className="hover:text-[var(--color-or)] transition">Nos Artisans</Link></li>
+              <li><Link href="/artisans" className="hover:text-[var(--color-or)] transition">Nos Artisans</Link></li>
               <li><Link href="#" className="hover:text-[var(--color-or)] transition">L'Histoire Tifawin</Link></li>
             </ul>
           </div>
