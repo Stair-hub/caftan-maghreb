@@ -48,7 +48,13 @@ export default function Home() {
               className="group cursor-pointer block"
             >
               <div className="w-full h-96 bg-[var(--color-sable)] rounded-lg mb-4 transition group-hover:opacity-80 flex items-center justify-center overflow-hidden relative">
-                <Image src={product.image} alt={product.name} fill className="object-cover" />
+                {product.image ? (
+                  <Image src={product.image} alt={product.name} fill className="object-cover" />
+                ) : (
+                  <span className="text-[var(--color-sable-dark)] font-serif text-lg opacity-60 text-center px-4">
+                    {product.name}
+                  </span>
+                )}
               </div>
               <h3 className="font-bold text-lg text-foreground">
                 {product.name}

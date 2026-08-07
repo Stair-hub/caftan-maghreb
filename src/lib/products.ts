@@ -70,7 +70,7 @@ export const products: Product[] = [
     category: "Accessoires",
     slug: "sac-maroquinerie-atlas",
     description: "Sac en cuir véritable de très haute qualité, tanné naturellement et confectionné à la main par nos maîtres maroquiniers. Design épuré alliant authenticité maghrébine et modernité.",
-    image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800",
+    image: "",
   },
 ];
 

@@ -37,7 +37,13 @@ export default async function ProductPage({
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="w-full aspect-[3/4] bg-[var(--color-sable)] rounded-lg flex items-center justify-center overflow-hidden relative">
-          <Image src={product.image} alt={product.name} fill className="object-cover" />
+          {product.image ? (
+            <Image src={product.image} alt={product.name} fill className="object-cover" />
+          ) : (
+            <span className="text-[var(--color-sable-dark)] font-serif text-2xl opacity-60 text-center px-6">
+              {product.name}
+            </span>
+          )}
         </div>
 
         <div className="flex flex-col gap-6">
