@@ -72,6 +72,15 @@ export const products: Product[] = [
     description: "Sac en cuir véritable de très haute qualité, tanné naturellement et confectionné à la main par nos maîtres maroquiniers. Design épuré alliant authenticité maghrébine et modernité.",
     image: "",
   },
+  {
+    id: 8,
+    name: "Bracelet Khmissa Or",
+    price: 220,
+    category: "Accessoires",
+    slug: "bracelet-khmissa-or",
+    description: "Bracelet traditionnel Khmissa forgé à la main, un symbole intemporel de protection. Finition à l'or fin 18k réalisée avec minutie par nos artisans bijoutiers.",
+    image: "",
+  },
 ];
 
 export function getProductsByCategory(category: string): Product[] {
