@@ -22,9 +22,9 @@ export function GradientBackground({ className }: { className?: string }) {
         style={{
           position: "absolute",
         inset: 0,
-        backgroundColor: "#7A3B6B",
+        backgroundColor: "#2e1204",
         backgroundImage:
-          "radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.048) 100%), radial-gradient(circle at 48% 44%, #FFE7C7 0%, #F6A96B 16.17%, #E4676B 37.73%, #7A3B6B 71.61%)",
+          "radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.1) 100%), radial-gradient(circle at 90% 40%, #FFE7C7 0%, #FF9E5E 20%, #E65C30 45%, #8B2B04 75%, #2e1204 100%)",
         }}
       />
     </div>
