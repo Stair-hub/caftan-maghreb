@@ -26,7 +26,7 @@ export default function CartPage() {
                 </div>
               </div>
               <div className="text-right">
-                <p className="font-bold text-foreground">{item.price} USD</p>
+                <p className="font-bold text-foreground">{item.price} €</p>
                 <p className="text-sm text-foreground opacity-70">Qté: {item.quantity}</p>
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function CartPage() {
           <h2 className="text-xl font-bold mb-4 text-foreground">Résumé</h2>
           <div className="flex justify-between mb-2 text-foreground">
             <span>Sous-total</span>
-            <span>850 USD</span>
+            <span>850 €</span>
           </div>
           <div className="flex justify-between mb-6 text-foreground">
             <span>Livraison</span>
@@ -44,7 +44,7 @@ export default function CartPage() {
           </div>
           <div className="flex justify-between font-bold text-lg border-t border-[var(--color-sable-dark)] pt-4 mb-6 text-foreground">
             <span>Total</span>
-            <span>850 USD</span>
+            <span>850 €</span>
           </div>
           <Link 
             href="/checkout" 

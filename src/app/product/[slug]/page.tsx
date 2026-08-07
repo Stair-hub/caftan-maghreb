@@ -51,7 +51,7 @@ export default async function ProductPage({
             {product.name}
           </h1>
           <p className="text-3xl font-bold text-[var(--color-or)]">
-            {product.price} USD
+            {product.price} €
           </p>
           <p className="text-foreground opacity-80 text-lg leading-relaxed">
             {product.description}

@@ -63,7 +63,7 @@ export default function Home() {
                 {product.category}
               </p>
               <p className="text-[var(--color-or)] font-semibold">
-                {product.price} USD
+                {product.price} €
               </p>
             </Link>
           ))}

@@ -34,7 +34,7 @@ export default function LeSoukChicPage() {
               {product.name}
             </h3>
             <p className="text-[var(--color-or)] font-semibold">
-              {product.price} USD
+              {product.price} €
             </p>
           </Link>
         ))}
