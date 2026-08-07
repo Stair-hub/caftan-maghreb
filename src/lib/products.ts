@@ -16,7 +16,7 @@ export const products: Product[] = [
     category: "La Sultane",
     slug: "takchita-nour-al-layl",
     description: "Takchita majestueuse 3 pièces en crêpe et brocart. Un chef-d'œuvre d'artisanat marocain, brodée à la main avec des fils dorés et ornée de perles nacrées.",
-    image: "/products/takchita.jpg",
+    image: "/products/takchita.png",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const products: Product[] = [
     category: "Le Souk Chic",
     slug: "djellaba-medina",
     description: "Djellaba moderne en lin lavé, coupe fluide et confortable. Parfaite pour les soirées d'été, elle allie tradition et décontraction.",
-    image: "/products/djellaba.jpg",
+    image: "/products/djellaba.png",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ export const products: Product[] = [
     category: "La Sultane",
     slug: "karakou-eclat-alger",
     description: "Karakou algérois en velours bordeaux, broderie fetla traditionnelle. Une pièce de haute couture orientale qui sublime chaque silhouette.",
-    image: "/products/karakou.jpg",
+    image: "/products/karakou.png",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const products: Product[] = [
     category: "La Sultane",
     slug: "caftan-jardin-andalou",
     description: "Caftan en soie sauvage aux motifs floraux inspirés des jardins de l'Alhambra. Broderies géométriques en sfifa et aâkad.",
-    image: "/products/caftan.jpg",
+    image: "/products/caftan.png",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const products: Product[] = [
     category: "Le Souk Chic",
     slug: "gandoura-sahara",
     description: "Gandoura légère en coton biologique, teintes naturelles du désert. L'élégance quotidienne dans sa forme la plus pure.",
-    image: "/products/gandoura.jpg",
+    image: "/products/gandoura.png",
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ export const products: Product[] = [
     category: "Accessoires",
     slug: "babouches-fes-dorees",
     description: "Babouches artisanales en cuir tanné au végétal, brodées de fils d'or. Fabriquées à la main dans les ateliers de Fès.",
-    image: "/products/babouches.jpg",
+    image: "/products/babouches.png",
   },
 ];
 
