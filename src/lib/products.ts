@@ -29,12 +29,12 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    name: "Karakou Éclat d'Alger",
+    name: "Jabador Royal de Fès",
     price: 600,
     category: "La Sultane",
-    slug: "karakou-eclat-alger",
-    description: "Karakou algérois en velours bordeaux, broderie fetla traditionnelle. Une pièce de haute couture orientale qui sublime chaque silhouette.",
-    image: "/products/karakou.png",
+    slug: "jabador-royal-fes",
+    description: "Jabador marocain en velours bordeaux, broderie Tarz traditionnelle au fil d'or. Une pièce de haute couture orientale qui sublime chaque silhouette.",
+    image: "",
   },
   {
     id: 4,

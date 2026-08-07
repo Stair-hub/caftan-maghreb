@@ -24,7 +24,7 @@ export default function Home() {
         </h1>
         <p className="text-lg text-foreground opacity-80 max-w-2xl mx-auto mb-10">
           Nous célébrons l&apos;héritage majestueux du Maghreb en réinventant le
-          Caftan, la Djellaba et le Karakou pour la femme moderne. Nos créations
+          Caftan, la Djellaba et le Jabador pour la femme moderne. Nos créations
           marient le savoir-faire ancestral des maîtres artisans à des coupes
           fluides et contemporaines.
         </p>

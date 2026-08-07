@@ -69,25 +69,25 @@ export default function ArtisansPage() {
           </p>
         </div>
 
-        {/* Artisan 3: Hassan */}
+        {/* Artisan 3: Driss */}
         <div className="group">
           <div className="w-full aspect-[4/5] rounded-lg overflow-hidden relative mb-6 bg-[var(--color-sable)]">
              {/* Fallback to external placeholder for the demo */}
             <Image
               src="https://images.unsplash.com/photo-1598285521743-fdbba8ba6dc2?q=80&w=800"
-              alt="Maâlem Hassan"
+              alt="Maâlem Driss"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
           <h2 className="text-2xl font-serif font-bold text-foreground mb-2">
-            Maâlem Hassan
+            Maâlem Driss
           </h2>
-          <p className="text-[var(--color-or)] font-medium mb-4">Expert en Fetla (Broderie Algéroise)</p>
+          <p className="text-[var(--color-or)] font-medium mb-4">Expert en Tarz Fassi (Broderie de Fès)</p>
           <p className="text-foreground opacity-70 text-sm leading-relaxed">
-            Avec plus de 40 ans d&apos;expérience, Hassan est une légende vivante 
-            de la broderie algéroise. C&apos;est lui qui signe les magnifiques 
-            ornements en fils dorés sur nos Karakous en velours.
+            Avec plus de 40 ans d&apos;expérience, Driss est une légende vivante 
+            de la broderie de Fès. C&apos;est lui qui signe les magnifiques 
+            motifs traditionnels en fils de soie et d&apos;or sur nos Jabadors.
           </p>
         </div>
       </div>

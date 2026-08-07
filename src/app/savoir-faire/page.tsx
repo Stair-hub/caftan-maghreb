@@ -56,7 +56,7 @@ export default function SavoirFairePage() {
             <p className="text-foreground opacity-80 leading-relaxed text-lg">
               Dans nos ateliers situés au cœur des médinas, le temps semble
               suspendu. Nous refusons la production de masse. La confection d&apos;un
-              Karakou ou d&apos;un Caftan Tifawin peut nécessiter jusqu&apos;à trois mois
+              Jabador ou d&apos;un Caftan Tifawin peut nécessiter jusqu&apos;à trois mois
               de travail minutieux. De la coupe du tissu à la pose de la dernière
               perle nacrée, tout est réalisé à la main par des artisans dont le
               savoir-faire est un héritage familial.

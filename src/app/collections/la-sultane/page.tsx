@@ -12,7 +12,7 @@ export default function LaSultanePage() {
       </h1>
       <p className="text-foreground opacity-70 mb-12 max-w-2xl">
         Pièces d&apos;exception pour les grandes occasions. Caftans, Takchitas et
-        Karakous brodés à la main par nos maîtres artisans.
+        Jabadors brodés à la main par nos maîtres artisans.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {items.map((product) => (

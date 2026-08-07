@@ -16,8 +16,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Atelier Tifawin - Boutique Maghrébine de Luxe",
-  description: "L'élégance maghrébine réinventée. Caftans, Djellabas, Karakous modernes.",
+  title: "Atelier Tifawin | Créations Orientales",
+  description: "L'élégance maghrébine réinventée. Caftans, Djellabas, Jabadors modernes.",
 };
 
 export default function RootLayout({
