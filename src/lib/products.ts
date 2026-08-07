@@ -63,6 +63,15 @@ export const products: Product[] = [
     description: "Babouches artisanales en cuir tanné au végétal, brodées de fils d'or. Fabriquées à la main dans les ateliers de Fès.",
     image: "/products/babouches.png",
   },
+  {
+    id: 7,
+    name: "Sac Maroquinerie Atlas",
+    price: 145,
+    category: "Accessoires",
+    slug: "sac-maroquinerie-atlas",
+    description: "Sac en cuir véritable de très haute qualité, tanné naturellement et confectionné à la main par nos maîtres maroquiniers. Design épuré alliant authenticité maghrébine et modernité.",
+    image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800",
+  },
 ];
 
 export function getProductsByCategory(category: string): Product[] {
