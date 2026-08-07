@@ -12,6 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { Amiri } from "next/font/google";
+const amiri = Amiri({
+  weight: ["400", "700"],
+  subsets: ["latin", "arabic"],
+  variable: "--font-amiri",
+});
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { GradientBackground } from "@/components/ui/sunset";
@@ -29,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-transparent">
         <div className="fixed inset-0 -z-50">

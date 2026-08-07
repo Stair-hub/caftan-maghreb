@@ -17,12 +17,12 @@ export default function Home() {
             spread={4}
             pauseBetween={2000}
             baseColor="var(--color-or)"
-            className="text-5xl font-serif font-bold tracking-tight"
+            className="text-5xl md:text-7xl font-[family-name:var(--font-amiri)] font-bold tracking-tight"
           >
             La lumière de nos ancêtres
           </GradientShimmer>
         </h1>
-        <p className="text-lg text-foreground opacity-80 max-w-2xl mx-auto mb-10">
+        <p className="text-2xl md:text-3xl font-[family-name:var(--font-amiri)] text-foreground max-w-3xl mx-auto mb-10 leading-relaxed" style={{ textShadow: "1px 1px 0 rgba(255,255,255,0.4), -1px -1px 2px rgba(0,0,0,0.3)" }}>
           Nous célébrons l&apos;héritage majestueux du Maghreb en réinventant le
           Caftan, la Djellaba et le Jabador pour la femme moderne. Nos créations
           marient le savoir-faire ancestral des maîtres artisans à des coupes
