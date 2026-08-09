@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { products, getProductBySlug } from "@/lib/products";
+import { GradientBackground } from "@/components/ui/desert-horizon";
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -36,14 +37,17 @@ export default async function ProductPage({
       </nav>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="w-full aspect-[3/4] bg-[var(--color-sable)] rounded-lg flex items-center justify-center overflow-hidden relative">
-          {product.image ? (
-            <Image src={product.image} alt={product.name} fill className="object-cover" />
-          ) : (
-            <span className="text-[var(--color-sable-dark)] font-serif text-2xl opacity-60 text-center px-6">
-              {product.name}
-            </span>
-          )}
+        <div className="w-full aspect-[3/4] rounded-lg flex items-center justify-center overflow-hidden relative">
+          <GradientBackground className="absolute inset-0 z-0" />
+          <div className="relative z-10 w-full h-full flex items-center justify-center">
+            {product.image ? (
+              <Image src={product.image} alt={product.name} fill className="object-cover" />
+            ) : (
+              <span className="text-[var(--color-or-light)] font-serif text-2xl opacity-80 text-center px-6 drop-shadow-md">
+                {product.name}
+              </span>
+            )}
+          </div>
         </div>
 
         <div className="flex flex-col gap-6">

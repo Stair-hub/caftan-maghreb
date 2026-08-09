@@ -1,31 +1,36 @@
 import Image from "next/image";
 import { GradientShimmer } from "@/components/ui/gradient-shimmer";
+import { GradientBackground } from "@/components/ui/desert-horizon";
 
 export default function ArtisansPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="text-center mb-16">
-        <h1 className="text-5xl font-serif font-bold text-[var(--color-or)] mb-6">
-          <GradientShimmer
-            gradient="tonic"
-            easing="gentle"
-            duration={2.5}
-            spread={5}
-            pauseBetween={2000}
-            baseColor="var(--color-or)"
-            className="text-5xl font-serif font-bold tracking-tight"
-          >
-            Nos Artisans
-          </GradientShimmer>
-        </h1>
-        <p className="text-xl text-foreground opacity-80 leading-relaxed max-w-2xl mx-auto">
-          Rencontrez les maîtres de l&apos;Atelier Tifawin. Leurs mains expertes
-          donnent vie à nos créations et perpétuent un savoir-faire maghrébin
-          inestimable.
-        </p>
-      </div>
+    <div className="w-full">
+      <section className="relative text-center py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <GradientBackground className="absolute inset-0 z-0" />
+        <div className="relative z-10">
+          <h1 className="text-5xl font-serif font-bold text-[var(--color-or)] mb-6">
+            <GradientShimmer
+              gradient="tonic"
+              easing="gentle"
+              duration={2.5}
+              spread={5}
+              pauseBetween={2000}
+              baseColor="var(--color-or)"
+              className="text-5xl font-serif font-bold tracking-tight drop-shadow-md"
+            >
+              Nos Artisans
+            </GradientShimmer>
+          </h1>
+          <p className="text-xl text-foreground opacity-90 leading-relaxed max-w-2xl mx-auto drop-shadow-sm font-medium">
+            Rencontrez les maîtres de l&apos;Atelier Tifawin. Leurs mains expertes
+            donnent vie à nos créations et perpétuent un savoir-faire maghrébin
+            inestimable.
+          </p>
+        </div>
+      </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Artisan 1: Afifa.E */}
         <div className="group">
           <div className="w-full aspect-[4/5] rounded-lg overflow-hidden relative mb-6">
@@ -90,7 +95,7 @@ export default function ArtisansPage() {
             motifs traditionnels en fils de soie et d&apos;or sur nos Jabadors.
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -2,41 +2,45 @@ import Link from "next/link";
 import Image from "next/image";
 import { products } from "@/lib/products";
 import { GradientShimmer } from "@/components/ui/gradient-shimmer";
+import { GradientBackground } from "@/components/ui/desert-horizon";
 
 export default function Home() {
   const featured = products.slice(0, 3);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <section className="text-center py-20">
-        <h1 className="text-5xl font-serif font-bold text-[var(--color-or)] mb-6">
-          <GradientShimmer
-            gradient="tonic"
-            easing="gentle"
-            duration={2}
-            spread={4}
-            pauseBetween={2000}
-            baseColor="var(--color-or)"
-            className="text-5xl md:text-7xl font-[family-name:var(--font-amiri)] font-bold tracking-tight"
+    <div className="w-full">
+      <section className="relative text-center py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <GradientBackground className="absolute inset-0 z-0" />
+        <div className="relative z-10">
+          <h1 className="text-5xl font-serif font-bold text-[var(--color-or)] mb-6">
+            <GradientShimmer
+              gradient="tonic"
+              easing="gentle"
+              duration={2}
+              spread={4}
+              pauseBetween={2000}
+              baseColor="var(--color-or)"
+              className="text-5xl md:text-7xl font-[family-name:var(--font-amiri)] font-bold tracking-tight drop-shadow-md"
+            >
+              La lumière de nos ancêtres
+            </GradientShimmer>
+          </h1>
+          <p className="text-2xl md:text-3xl font-[family-name:var(--font-amiri)] text-foreground max-w-3xl mx-auto mb-10 leading-relaxed drop-shadow-sm font-medium">
+            Nous célébrons l&apos;héritage majestueux du Maghreb en réinventant le
+            Caftan, la Djellaba et le Jabador pour la femme moderne. Nos créations
+            marient le savoir-faire ancestral des maîtres artisans à des coupes
+            fluides et contemporaines.
+          </p>
+          <Link
+            href="/collections/la-sultane"
+            className="bg-[var(--color-or)] text-background font-bold py-3 px-8 rounded-full hover:bg-[var(--color-or-light)] transition shadow-lg inline-block"
           >
-            La lumière de nos ancêtres
-          </GradientShimmer>
-        </h1>
-        <p className="text-2xl md:text-3xl font-[family-name:var(--font-amiri)] text-foreground max-w-3xl mx-auto mb-10 leading-relaxed" style={{ textShadow: "1px 1px 0 rgba(255,255,255,0.4), -1px -1px 2px rgba(0,0,0,0.3)" }}>
-          Nous célébrons l&apos;héritage majestueux du Maghreb en réinventant le
-          Caftan, la Djellaba et le Jabador pour la femme moderne. Nos créations
-          marient le savoir-faire ancestral des maîtres artisans à des coupes
-          fluides et contemporaines.
-        </p>
-        <Link
-          href="/collections/la-sultane"
-          className="bg-[var(--color-or)] text-background font-bold py-3 px-8 rounded-full hover:bg-[var(--color-or-light)] transition"
-        >
-          Découvrir la Collection
-        </Link>
+            Découvrir la Collection
+          </Link>
+        </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-serif font-bold text-center text-[var(--color-or)] mb-12">
           Nos Pièces Phares
         </h2>
