@@ -1,27 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getProductsByCategory } from "@/lib/products";
-import { GradientBackground } from "@/components/ui/desert-horizon";
 
 export default function LeSoukChicPage() {
   const items = getProductsByCategory("Le Souk Chic");
 
   return (
-    <div className="w-full">
-      <section className="relative text-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <GradientBackground className="absolute inset-0 z-0" />
-        <div className="relative z-10">
-          <h1 className="text-4xl font-serif font-bold text-[var(--color-or)] mb-4 drop-shadow-md">
-            Le Souk Chic
-          </h1>
-          <p className="text-foreground opacity-90 mb-8 max-w-2xl mx-auto drop-shadow-sm font-medium">
-            L&apos;élégance du quotidien. Djellabas et Gandouras modernes, confortables
-            et raffinées pour chaque moment de la journée.
-          </p>
-        </div>
-      </section>
-
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 className="text-4xl font-serif font-bold text-[var(--color-or)] mb-4">
+        Le Souk Chic
+      </h1>
+      <p className="text-foreground opacity-70 mb-12 max-w-2xl">
+        L&apos;élégance du quotidien. Djellabas et Gandouras modernes, confortables
+        et raffinées pour chaque moment de la journée.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {items.map((product) => (
           <Link
@@ -47,7 +39,6 @@ export default function LeSoukChicPage() {
           </Link>
         ))}
       </div>
-      </section>
     </div>
   );
 }
