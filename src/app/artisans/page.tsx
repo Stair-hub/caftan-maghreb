@@ -33,6 +33,7 @@ export default function ArtisansPage() {
               src="/artisans/afifa.png"
               alt="Afifa.E - Maîtresse Brodeuse"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
@@ -55,6 +56,7 @@ export default function ArtisansPage() {
               src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=800"
               alt="Maâlem Youssef"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
@@ -77,6 +79,7 @@ export default function ArtisansPage() {
               src="https://images.unsplash.com/photo-1598285521743-fdbba8ba6dc2?q=80&w=800"
               alt="Maâlem Driss"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>

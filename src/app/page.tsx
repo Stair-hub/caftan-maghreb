@@ -49,7 +49,7 @@ export default function Home() {
             >
               <div className="w-full h-96 bg-[var(--color-sable)] rounded-lg mb-4 transition group-hover:opacity-80 flex items-center justify-center overflow-hidden relative">
                 {product.image ? (
-                  <Image src={product.image} alt={product.name} fill className="object-cover" />
+                  <Image src={product.image} alt={product.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
                 ) : (
                   <span className="text-[var(--color-sable-dark)] font-serif text-lg opacity-60 text-center px-4">
                     {product.name}
