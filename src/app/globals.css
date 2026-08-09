@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdfbf7;
+  --background: #F7ECE6;
   --foreground: #2d241c;
-  --sable: #e6dac3;
-  --sable-dark: #c8b79b;
+  --sable: #DFCEC3;
+  --sable-dark: #C6AD9E;
   --or: #d4af37;
   --or-light: #eadd8c;
 }
