@@ -21,7 +21,6 @@ const amiri = Amiri({
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { GradientBackground } from "@/components/ui/sunset";
 
 export const metadata: Metadata = {
   title: "Atelier Tifawin | Créations Orientales",
@@ -38,10 +37,7 @@ export default function RootLayout({
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-transparent">
-        <div className="fixed inset-0 -z-50">
-          <GradientBackground className="w-full h-full" />
-        </div>
+      <body className="min-h-full flex flex-col">
         <Navbar />
         <main className="flex-grow">
           {children}
